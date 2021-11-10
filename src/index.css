@@ -1,3 +1,19 @@
+body {
+  margin: 0;
+}
+
+p, h1, h2, h3, h4, h5, h6, span, li, a {
+  color: white;
+}
+
+#navitem.active {
+  background-color: #2B1E49;
+}
+
+#navitem:hover:not(.active) {
+  background-color: #2B1E49;
+}
+
 @font-face {
   font-family: 'CenturyGothic';
   src: local('CenturyGothic'), url(./assets/fonts/CenturyGothic/Regular.ttf) format('truetype');
