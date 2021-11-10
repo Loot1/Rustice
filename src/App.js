@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from "./components/Header"
+import Footer from "./components/Footer"
+import woman from "./assets/images/justice_woman.png"
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div style={{backgroundColor: "#270D3D"}}>
+            <Header/>
+            <div style={{backgroundColor:"#2B1E49"}}>
+                <img src={woman} alt="Logo de Justice" height="40%" width="40%"/>
+            </div>
+            <Footer/>
+        </div>
+    )
 }
 
-export default App;
+export default App
