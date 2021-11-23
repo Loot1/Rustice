@@ -1,81 +1,119 @@
-import logo from "../../../assets/images/logo.png"
+import { NavLink } from 'react-router-dom'
 
-const styles = {
-    navitem: {
-        display:"block",
-        padding:"8px 16px",
-        textDecoration:"none"
-    }
-}
+import logo from "../../../assets/images/logo.png"
 
 const Header = () => {
     return (
-        <header style={{fontFamily:"Soulmaze"}}>
+        <header style={{ fontFamily: "Soulmaze" }}>
             <div style={{
-                display:"flex",
-                justifyContent:"center",
-                alignItems:"center",
-                padding:"20px"
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                padding: "20px"
             }}>
-                <img src={logo} alt="Logo de Justice" height="70px" width="70px" style={{marginRight:"10px"}}/>
+                <img src={logo} alt="Logo de Justice" height="70px" width="70px" style={{ marginRight: "10px" }} />
                 <span style={{
-                    borderTopStyle:"solid",
-                    borderBottomStyle:"solid",
-                    borderTopWidth:"1.5px",
-                    borderBottomWidth:"1.5px",
-                    fontSize:"35px"
+                    borderTopStyle: "solid",
+                    borderBottomStyle: "solid",
+                    borderTopWidth: "1.5px",
+                    borderBottomWidth: "1.5px",
+                    fontSize: "35px"
                 }}>
                     Justice
                 </span>
             </div>
             <div style={{
-                display:"flex",
-                justifyContent:"center",
-                alignItems:"center",
-                padding:"10px",
-                paddingBottom:"25px"
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                padding: "10px",
+                paddingBottom: "25px"
             }}>
                 <button style={{
-                    backgroundColor:"transparent",
-                    borderWidth:"3px",
-                    borderRadius:"45px",
-                    borderColor:"white",
-                    paddingTop:"10px",
-                    paddingRight:"40px",
-                    paddingLeft:"40px",
-                    paddingBottom:"10px",
-                    fontSize:"20px",
-                    fontFamily:"Soulmaze",
-                    color:"white"
+                    backgroundColor: "transparent",
+                    borderWidth: "3px",
+                    borderRadius: "45px",
+                    borderColor: "white",
+                    paddingTop: "10px",
+                    paddingRight: "40px",
+                    paddingLeft: "40px",
+                    paddingBottom: "10px",
+                    fontSize: "20px",
+                    fontFamily: "Soulmaze",
+                    color: "white"
                 }}>
                     Se connecter
                 </button>
             </div>
             <ul style={{
-                listStyleType:"none",
-                padding:"0px",
-                margin:"0px",
-                fontSize:"20px"
+                listStyleType: "none",
+                padding: "0px",
+                margin: "0px",
+                fontSize: "20px"
             }}>
                 <li>
-                    <a class="active" href="#home" id="navitem" style={styles.navitem}>
+                    <NavLink
+                        id="navitem"
+                        style={({ isActive }) => {
+                            return {
+                                display: "block",
+                                padding: "8px 16px",
+                                textDecoration: "none",
+                                backgroundColor: isActive ? "#2B1E49" : null
+                            }
+                        }} 
+                        to="/"
+                    >
                         Accueil
-                    </a>
+                    </NavLink>
                 </li>
                 <li>
-                    <a href="#news" id="navitem" style={styles.navitem}>
+                <NavLink
+                        id="navitem"
+                        style={({ isActive }) => {
+                            return {
+                                display: "block",
+                                padding: "8px 16px",
+                                textDecoration: "none",
+                                backgroundColor: isActive ? "#2B1E49" : null
+                            }
+                        }} 
+                        to="/informations"
+                    >
                         Informations
-                    </a>
+                    </NavLink>
                 </li>
                 <li>
-                    <a href="#contact" id="navitem" style={styles.navitem}>
+                <NavLink
+                        id="navitem"
+                        style={({ isActive }) => {
+                            return {
+                                display: "block",
+                                padding: "8px 16px",
+                                textDecoration: "none",
+                                backgroundColor: isActive ? "#2B1E49" : null
+                            }
+                        }} 
+                        to="/requetes"
+                    >
                         Requêtes
-                    </a>
+                    </NavLink>
                 </li>
                 <li>
-                    <a href="#about" id="navitem" style={styles.navitem}>
+                    <NavLink
+                        id="navitem"
+                        style={({ isActive }) => {
+                            return {
+                                display: "block",
+                                padding: "8px 16px",
+                                textDecoration: "none",
+                                backgroundColor: isActive ? "#2B1E49" : null
+                            }
+                        }} 
+                        to="/a-propos"
+                    >
                         À propos
-                    </a>
+                    </NavLink>
                 </li>
             </ul>
         </header>

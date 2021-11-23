@@ -3,7 +3,7 @@ import Footer from "./components/Footer"
 
 const Navbar = () => {
     return (
-        <div style={{
+        <nav style={{
             backgroundColor:"#270D3D",
             margin:"0px",
             padding:"0px",
@@ -14,7 +14,7 @@ const Navbar = () => {
         }}>
             <Header/>
             <Footer/>
-        </div>
+        </nav>
     )
 }
 

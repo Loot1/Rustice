@@ -1,3 +1,5 @@
+import { NavLink } from 'react-router-dom'
+
 const styles = {
     liststyle: {
         listStyleType:"none",
@@ -30,14 +32,14 @@ const Footer = () => {
         }}>
             <ul style={styles.liststyle}>
                 <li>
-                    <a href="#home" style={styles.linkpage}>
+                    <NavLink style={styles.linkpage} to="/mentions-legales">
                         Mentions légales
-                    </a>
+                    </NavLink>
                 </li>
                 <li>
-                    <a href="#news" style={styles.linkpage}>
+                    <NavLink style={styles.linkpage} to="/politique-de-confidentialite">
                         Politique de confidentialité
-                    </a>
+                    </NavLink>
                 </li>
             </ul>
             <ul style={styles.liststyle}>
@@ -45,7 +47,7 @@ const Footer = () => {
                     Crédits :
                 </li>
                 <li>
-                    - Design par Mathias Delligne
+                    - Charte graphique par Mathias Delligne
                 </li>
                 <li>
                     - Police Soulmaze par <a href="https://behance.com/madetype" target="_blank" rel="noreferrer" style={{textDecoration:"none"}}>MadeType</a>

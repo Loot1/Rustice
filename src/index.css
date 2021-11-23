@@ -6,10 +6,6 @@ p, h1, h2, h3, h4, h5, h6, span, li, a {
   color: white;
 }
 
-#navitem.active {
-  background-color: #2B1E49;
-}
-
 #navitem:hover:not(.active) {
   background-color: #2B1E49;
 }
