@@ -1,22 +1,32 @@
 import logo from "../assets/images/logo.png"
 import justicewoman from "../assets/images/justice_woman.png"
 
-const HomePage = () => {
+export default function HomePage() {
     return (
         <div>
             <section style={{width:"100%", display:"flex", marginTop:"50px"}}>
                 <div style={{width:"60%"}}>
-                    <h2>Fixed Full-height Side Nav</h2>
-                    <h3>Try to scroll this area, and see how the sidenav sticks to the page</h3>
-                    <p>Notice that this div element has a left margin of 25%. This is because the side navigation is set to 25% width. If you remove the margin, the sidenav will overlay/sit on top of this div.</p>
-                    <p>Also notice that we have set overflow:auto to sidenav. This will add a scrollbar when the sidenav is too long (for example if it has over 50 links inside of it).</p>
-                    <p>Some text..</p>
-                    <p>Some text..</p>
-                    <p>Some text..</p>
-                    <p>Some text..</p>
-                    <p>Some text..</p>
-                    <p>Some text..</p>
-                    <p>Some text..</p>
+                    <div style={{
+                        display: "flex",
+                        justifyContent: "center",
+                        alignItems: "center"
+                    }}>
+                        <form>
+                            <input type="search" id="id" name="User ID" placeholder="Rechercher un utilisateur" style={{
+                                backgroundColor: "transparent",
+                                borderWidth: "3px",
+                                borderRadius: "18px",
+                                borderColor: "white",
+                                paddingTop: "16px",
+                                paddingRight: "50px",
+                                paddingLeft: "50px",
+                                paddingBottom: "16px",
+                                fontSize: "20px",
+                                color: "white"
+                            }}/>
+                            <input type="submit" value="Submit" />
+                        </form>
+                    </div>
                 </div>
                 <div style={{width:"40%"}}>
                     <img src={justicewoman} alt="Logo de Justice" width="100%" style={{}}/>
@@ -44,5 +54,3 @@ const HomePage = () => {
         </div>
     )
 }
-
-export default HomePage

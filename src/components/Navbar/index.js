@@ -1,7 +1,7 @@
 import Header from "./components/Header"
 import Footer from "./components/Footer"
 
-const Navbar = () => {
+export default function Navbar() {
     return (
         <nav style={{
             backgroundColor:"#270D3D",
@@ -17,5 +17,3 @@ const Navbar = () => {
         </nav>
     )
 }
-
-export default Navbar

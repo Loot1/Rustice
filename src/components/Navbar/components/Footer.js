@@ -18,7 +18,7 @@ const styles = {
     }
 }
 
-const Footer = () => {
+export default function Footer() {
     return (
         <footer style={{
             fontFamily:"CenturyGothic",
@@ -60,5 +60,3 @@ const Footer = () => {
         </footer>
     )
 }
-
-export default Footer

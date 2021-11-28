@@ -14,6 +14,7 @@ import RequestPage from './routes/Request.js'
 import AboutPage from './routes/About.js'
 import LegalNoticePage from './routes/LegalNotice.js'
 import PrivacyPolicyPage from './routes/PrivacyPolicy.js'
+import NoMatchPage from './routes/NoMatch.js'
 
 ReactDOM.render(
   <React.StrictMode>
@@ -32,6 +33,7 @@ ReactDOM.render(
           <Route path="/a-propos" element={<AboutPage/>}/>
           <Route path="/mentions-legales" element={<LegalNoticePage/>}/>
           <Route path="/politique-de-confidentialite" element={<PrivacyPolicyPage/>}/>
+          <Route path="*" element={<NoMatchPage/>}/>
         </Routes>
       </div>
     </BrowserRouter>

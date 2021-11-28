@@ -2,7 +2,7 @@ import { NavLink } from 'react-router-dom'
 
 import logo from "../../../assets/images/logo.png"
 
-const Header = () => {
+export default function Header() {
     return (
         <header style={{ fontFamily: "Soulmaze" }}>
             <div style={{
@@ -11,7 +11,9 @@ const Header = () => {
                 alignItems: "center",
                 padding: "20px"
             }}>
-                <img src={logo} alt="Logo de Justice" height="70px" width="70px" style={{ marginRight: "10px" }} />
+                <NavLink to="/">
+                    <img src={logo} alt="Logo de Justice" height="65px" width="65px" style={{ marginRight: "10px" }} />
+                </NavLink>
                 <span style={{
                     borderTopStyle: "solid",
                     borderBottomStyle: "solid",
@@ -119,5 +121,3 @@ const Header = () => {
         </header>
     )
 }
-
-export default Header
