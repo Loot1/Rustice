@@ -17,6 +17,7 @@ export default function HomePage() {
                                 borderWidth: "3px",
                                 borderRadius: "18px",
                                 borderColor: "white",
+                                borderStyle: "solid",
                                 paddingTop: "16px",
                                 paddingRight: "50px",
                                 paddingLeft: "50px",
