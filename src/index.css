@@ -1,13 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
 }
 
-p, h1, h2, h3, h4, h5, h6, span, li, a {
+p, span, a {
   color: white;
 }
 
-#navitem:hover:not(.active) {
-  background-color: #2B1E49;
+li, h1, h2, h3, h4, h5, h6 {
+  color: white;
+  font-family: "CenturyGothic";
 }
 
 @font-face {
@@ -17,25 +22,12 @@ p, h1, h2, h3, h4, h5, h6, span, li, a {
 }
 
 @font-face {
-  font-family: 'CenturyGothic';
+  font-family: 'CenturyGothic-Bold';
   src: local('CenturyGothic'), url(./assets/fonts/CenturyGothic/Bold.ttf) format('truetype');
   font-weight: bold;
 }
 
 @font-face {
-  font-family: 'Soulmaze';
-  src: local('Soulmaze'), url(./assets/fonts/Soulmaze/Regular.otf) format('opentype');
-  font-weight: normal;
-}
-
-@font-face {
-  font-family: 'Soulmaze';
-  src: local('Soulmaze'), url(./assets/fonts/Soulmaze/Brush.otf) format('opentype');
-  font-weight: bold;
-}
-
-@font-face {
-  font-family: 'Soulmaze';
-  src: local('Soulmaze'), url(./assets/fonts/Soulmaze/Italic.otf) format('opentype');
-  font-style: italic;
+  font-family: 'ShowcardGothic';
+  src: local('ShowcardGothic'), url(./assets/fonts/ShowcardGothic.ttf) format('truetype');
 }

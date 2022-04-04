@@ -3,7 +3,10 @@ import justicewoman from "../assets/images/justice_woman.png"
 
 export default function HomePage() {
     return (
-        <div>
+        <div className="bg-[#2B1E49]">
+            <h1 className="text-3xl font-bold underline">
+                Hello world!
+            </h1>
             <section style={{width:"100%", display:"flex", marginTop:"50px"}}>
                 <div style={{width:"60%"}}>
                     <div style={{
