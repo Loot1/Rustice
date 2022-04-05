@@ -14,7 +14,7 @@ export default function Footer() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 py-6 md:py-8">
                     <ul>
                         {links.map((link) => (
-                            <li>
+                            <li key={link.name}>
                                 {/* "text-gray-400 hover:text-teal-400 duration-300 text-sm cursor-pointer leading-6" */}
                                 <NavLink to={link.link}>
                                     {link.name}
@@ -24,17 +24,14 @@ export default function Footer() {
                     </ul>
                     <div className="flex justify-end">
                         <ul className="pt-6 sm:pt-0">
-                            <li className="font-semibold">
+                            <li className="font-semibold" key="credits">
                                 Crédits :
                             </li>
-                            <li>
+                            <li key="design">
                                 Design & Charte graphique par Mathias Delligne
                             </li>
-                            <li>
+                            <li key="development">
                                 Développé par <a href="https://www.linkedin.com/in/louis-sachy/" target="_blank" rel="noreferrer">Louis Sachy</a>
-                            </li>
-                            <li>
-                                Police d'écriture Soul Maze par <a href="https://behance.com/madetype" target="_blank" rel="noreferrer">MadeType</a>
                             </li>
                         </ul>
                     </div>

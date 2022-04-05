@@ -1,8 +1,8 @@
 export default function AboutPage() {
     return (
-        <section class="p-4 bg-[#2B1E49]">
-            <div class="mx-auto font-sans">
-                <h1 class="text-2xl font-bold">Tailwind CSS sticky header</h1>
+        <section className="p-4 bg-[#2B1E49]">
+            <div className="mx-auto font-sans">
+                <h1 className="text-2xl font-bold">Tailwind CSS sticky header</h1>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam quasi minus maxime reiciendis! Officiis,
                     doloremque consectetur nihil ipsum illo, reiciendis, suscipit cumque quae laboriosam nulla ratione ut dolores
                     quibusdam voluptatum.
