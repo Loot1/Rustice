@@ -1,14 +1,19 @@
 import background from "../assets/images/background.jpg"
 import hexagon from "../assets/images/hexagon.png"
+import backgroundmobile from "../assets/images/mobile-background3.jpg"
+import hexagonmobile from "../assets/images/mobile-hexagon3.png"
 import symbol from "../assets/images/justice_woman.png"
 import logo from "../assets/images/logo.png"
 
 export default function RequestPage() {
     return (
         <div>
-            <section>
-                <img src={background} className="relative w-full h-screen object-cover" alt=""/>
-                <img src={hexagon} className="absolute top-0 object-cover h-screen" alt=""/>
+            <section className="bg-[#270D3D]">
+                <img src={background} className="relative w-full h-screen object-cover hidden lg:flex" alt=""/>
+                <img src={hexagon} className="absolute top-0 object-cover h-screen hidden lg:flex" alt=""/>
+
+                <img src={backgroundmobile} className="relative w-full h-screen object-cover lg:hidden" alt=""/>
+                <img src={hexagonmobile} className="absolute object-cover bottom-0 h-1/2 z-50 w-full lg:hidden" alt=""/>
                 {/* <img src={symbol} className="absolute" alt="" style={{height:748, width:652, top:200, left:1000}}/> */}
             </section>
             <section className="bg-[#2A1D48] grid grid-cols-3 py-6 lg:grid-cols-5 md:py-16 lg:grid-cols-5 px-36">

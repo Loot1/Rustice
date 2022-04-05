@@ -54,7 +54,6 @@ export default function Header() {
                         paddingLeft: "40px",
                         paddingBottom: "10px",
                         fontSize: "20px",
-                        fontFamily: "Soulmaze",
                         fontFamily: "ShowcardGothic"
                     }}>
                         Se connecter
