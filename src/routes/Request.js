@@ -1,6 +1,4 @@
-import background from "../assets/images/background.jpg"
 import hexagon from "../assets/images/hexagon.png"
-import backgroundmobile from "../assets/images/mobile-background3.jpg"
 import hexagonmobile from "../assets/images/mobile-hexagon3.png"
 import symbol from "../assets/images/justice_woman.png"
 import logo from "../assets/images/logo.png"
@@ -8,15 +6,14 @@ import logo from "../assets/images/logo.png"
 export default function RequestPage() {
     return (
         <div>
-            <section className="bg-[#270D3D]">
-                <img src={background} className="relative w-full h-screen object-cover hidden lg:flex" alt=""/>
-                <img src={hexagon} className="absolute top-0 object-cover h-screen hidden lg:flex" alt=""/>
-
-                <img src={backgroundmobile} className="relative w-full h-screen object-cover lg:hidden" alt=""/>
-                <img src={hexagonmobile} className="absolute object-cover bottom-0 h-1/2 z-50 w-full lg:hidden" alt=""/>
+            <section id="bg" className="bg-[#270D3D] bg-[url('/public/background.jpg')] bg-cover" style={{height:"100vh"}}>
+                {/* 68vh */}
+                {/* char new de Discord ? */}
+                <img src={hexagon} className="absolute top-0 object-cover h-screen hidden md:flex" alt=""/>
+                <img src={hexagonmobile} className="absolute bottom-0 object-cover w-full md:hidden" alt="" style={{maxWidth:"400px"}}/>
                 {/* <img src={symbol} className="absolute" alt="" style={{height:748, width:652, top:200, left:1000}}/> */}
             </section>
-            <section className="bg-[#2A1D48] grid grid-cols-3 py-6 lg:grid-cols-5 md:py-16 lg:grid-cols-5 px-36">
+            <section className="bg-[#2A1D48] grid grid-cols-3 lg:grid-cols-5 md:py-16 lg:grid-cols-5 px-36">
                 <div className="col-span-2 flex justify-center items-center">
                     <img src={logo} alt="Logo de Justice" width="60%" style={{}}/>
                 </div>
