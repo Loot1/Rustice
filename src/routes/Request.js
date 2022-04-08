@@ -10,7 +10,7 @@ export default function RequestPage() {
                 {/* 68vh */}
                 {/* char new de Discord ? */}
                 <img src={hexagon} className="absolute lg:top-32 xl:top-0 object-scale-down hidden lg:flex" alt=""/>
-                <img src={hexagonmobile} className="absolute bottom-0 object-cover lg:hidden w-3/4 sm:w-4/6 md:w-3/5" alt=""/>
+                <img src={hexagonmobile} className="absolute bottom-0 object-cover lg:hidden w-3/4 sm:w-4/6 md:w-2/4" alt=""/>
                 {/* <img src={symbol} className="absolute" alt="" style={{height:748, width:652, top:200, left:1000}}/> */}
             </section>
             <section className="bg-[#2A1D48] grid grid-cols-3 lg:grid-cols-5 md:py-16 lg:grid-cols-5 px-36">
