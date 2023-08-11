@@ -1,10 +1,6 @@
 import { NavLink } from 'react-router-dom'
 
 export default function Footer() {
-    let links = [
-        {name:"Mentions légales", link:"/mentions-legales"},
-        {name:"Politique de confidentialité", link:"/politique-de-confidentialite"}
-    ]
     return (
         <footer className="bg-[#270D3D] text-white px-8 md:px-12 lg:px-20 xl:px-36">
             <div className="lg:w-3/4">
@@ -13,24 +9,27 @@ export default function Footer() {
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 py-6 md:py-8">
                     <ul>
-                        {links.map((link) => (
-                            <li key={link.name}>
-                                {/* "text-gray-400 hover:text-teal-400 duration-300 text-sm cursor-pointer leading-6" */}
-                                <NavLink to={link.link}>
-                                    {link.name}
-                                </NavLink>
-                            </li>
-                        ))}
+                        <li >
+                            {/* "text-gray-400 hover:text-teal-400 duration-300 text-sm cursor-pointer leading-6" */}
+                            <NavLink to="/mentions-legales">
+                                Mentions légales
+                            </NavLink>
+                        </li>
+                        <li >
+                            <NavLink to="/politique-de-confidentialite">
+                                Politique de confidentialité
+                            </NavLink>
+                        </li>
                     </ul>
                     <div className="flex justify-end">
                         <ul className="pt-6 sm:pt-0">
-                            <li className="font-semibold" key="credits">
+                            <li className="font-semibold">
                                 Crédits :
                             </li>
-                            <li key="design">
+                            <li>
                                 Design & Charte graphique par Mathias Delligne
                             </li>
-                            <li key="development">
+                            <li>
                                 Développé par <a href="https://www.linkedin.com/in/louis-sachy/" target="_blank" rel="noreferrer">Louis Sachy</a>
                             </li>
                         </ul>
