@@ -1,20 +1,60 @@
-import hexagon from "../assets/images/hexagon.png"
-import hexagonmobile from "../assets/images/mobile-hexagon3.png"
+import hexagon from "../assets/images/test-new-hexagon.png"
+import hexagonmobile from "../assets/images/test-new-mobile-hexagon.png"
 import symbol from "../assets/images/justice_woman.png"
 import logo from "../assets/images/logo.png"
+import { useState } from "react"
 
 export default function RequestPage() {
+    const [name, setName] = useState(null);
+
+    const handleChange = event => {
+        setName(event.target.value);
+    };
     return (
-        <div>
-            <section className="bg-[#270D3D] bg-[url('/public/background.jpg')] bg-cover" style={{height:"100vh"}}>
+        <>
+            <section className="bg-[#270D3D] bg-[url('/public/test-background.jpg')] bg-cover grid grid-cols-1 lg:grid-cols-2" style={{height:"100vh"}}>
                 {/* 68vh */}
                 {/* char new de Discord ? */}
+                {/* MQ = media query à mettre en place */}
+                
+                <div className="flex mt-32 justify-center">
+                    <form style={{
+                        borderWidth: "3px",
+                        borderRadius: "18px",
+                        borderColor: "white",
+                        borderStyle: "solid",
+                        height: "68px"
+                    }}>
+                        <input value={name} onChange={handleChange} style={{
+                            backgroundColor: "transparent",
+                            fontSize: "20px",
+                            color: "white",
+                            paddingTop: "16px",
+                            paddingRight: "30px",
+                            paddingLeft: "30px",
+                            paddingBottom: "16px",
+                            height: "68px"
+                        }}/>
+                        <input type="submit" value="Submit"/>
+                    </form>
+                </div>
                 <img src={hexagon} className="absolute lg:top-32 xl:top-0 object-scale-down hidden lg:flex" alt=""/>
-                <img src={hexagonmobile} className="absolute bottom-0 object-cover lg:hidden w-3/4 sm:w-4/6 md:w-2/4" alt=""/>
-                {/* <img src={symbol} className="absolute" alt="" style={{height:748, width:652, top:200, left:1000}}/> */}
+                <img src={hexagonmobile} className="absolute bottom-0 object-cover lg:hidden w-100 sm:w-4/6 md:w-2/4" alt=""/>
             </section>
-            <section className="bg-[#2A1D48] grid grid-cols-3 lg:grid-cols-5 md:py-16 lg:grid-cols-5 px-36">
-                <div className="col-span-2 flex justify-center items-center">
+
+
+
+
+
+
+
+
+
+
+
+
+            <section className="bg-[#2A1D48] grid grid-cols-3 lg:grid-cols-5 md:py-16 pt-32">
+                <div className="col-span-5 lg:col-span-2 flex justify-center items-center">
                     <img src={logo} alt="Logo de Justice" width="60%" style={{}}/>
                 </div>
                 <div className="col-span-3">
@@ -26,6 +66,6 @@ export default function RequestPage() {
                     <p>**Nous avons pour souhait d'établir une vraie confiance entre Justice et les propriétaires de serveur.**</p>
                 </div>
             </section>
-        </div>
+        </>
     )
 }
