@@ -4,7 +4,6 @@ import Header from "./components/Header.js"
 import Footer from "./components/Footer.js"
 
 import HomePage from './routes/Home.js'
-import InfoPage from './routes/Info.js'
 import RequestPage from './routes/Request.js'
 import AboutPage from './routes/About.js'
 import LegalNoticePage from './routes/LegalNotice.js'
@@ -17,7 +16,6 @@ export default function App() {
       <Header/>
       <Routes>
         <Route exact path="/" element={<HomePage/>}/>
-        <Route path="/informations" element={<InfoPage/>}/>
         <Route path="/requetes" element={<RequestPage/>}/>
         <Route path="/a-propos" element={<AboutPage/>}/>
         <Route path="/mentions-legales" element={<LegalNoticePage/>}/>
