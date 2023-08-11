@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
+import NavElement from './NavElement'
 import logo from "../assets/images/logo.png"
+import CircledButton from './CircledButton'
 
 export default function Header() {
     let [open, setOpen] = useState(false)
@@ -22,15 +24,9 @@ export default function Header() {
                     <ion-icon name="person" style={{color:"white", fontSize:"35px"}}></ion-icon>
                 </div>
                 <ul className={`bg-[#270D3D] lg:flex lg:items-center lg:pb-0 pb-2 absolute lg:static lg:z-auto z-[-1] left-0 w-full lg:w-auto lg:pl-0 pl-9 transition-all duration-500 ease-in ${open ? 'top-20' : 'top-[-490px]'}`} >
-                    <li className="lg:ml-8 text-2xl lg:my-0 my-7">
-                        <NavLink className="hover:text-gray-400 duration-500 navElement" to="/requetes">Requêtes</NavLink>
-                    </li>
-                    <li className="lg:ml-8 text-2xl lg:my-0 my-7">
-                        <NavLink className="hover:text-gray-400 duration-500 navElement" to="/a-propos">À propos</NavLink>
-                    </li>
-                    <button className="ml-16 border-white text-white hidden lg:flex headerButton">
-                        Se connecter
-                    </button>
+                    <NavElement link="/requetes">Requêtes</NavElement>
+                    <NavElement link="/a-propos">À propos</NavElement>
+                    <CircledButton>Se connecter</CircledButton>
                 </ul>
             </div>
         </header>

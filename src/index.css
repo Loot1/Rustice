@@ -48,23 +48,6 @@ li, h1, h2, h3, h4, h5, h6, input {
   font-weight: normal;
 }
 
-.headerButton {
-  border-style: solid;
-  border-width: 3px;
-  border-radius: 45px;
-  padding-top: 10px;
-  padding-right: 40px;
-  padding-left: 40px;
-  padding-bottom: 10px;
-  font-size: 20px;
-  font-family: ShowcardGothic;
-}
-
-.navElement {
-  font-family: ShowcardGothic;
-  letter-spacing: 2px;
-}
-
 /* END HEADER */
 
 #hexagon-mobile {
@@ -77,20 +60,8 @@ li, h1, h2, h3, h4, h5, h6, input {
   }
 }
 
-.inInput {
-  background-color: transparent;
-  font-size: 20px;
-  font-weight: bold;
-  color: white;
-  padding-right: 30px;
-  padding-left: 30px;
-  outline: none;
-}
-
-.outInput {
-  border-width: 3px;
-  border-radius: 18px;
-  border-color: white;
-  border-style: solid;
-  height: 68px;
+.lineWhenHover:hover {
+  #test {
+    text-decoration: underline;
+  }
 }
