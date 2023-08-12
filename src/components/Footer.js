@@ -9,14 +9,14 @@ export default function Footer() {
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 py-6 md:py-8">
                     <ul>
-                        <li >
+                        <li>
                             {/* "text-gray-400 hover:text-teal-400 duration-300 text-sm cursor-pointer leading-6" */}
-                            <NavLink to="/mentions-legales">
+                            <NavLink to="/mentions-legales" className="footerLink">
                                 Mentions légales
                             </NavLink>
                         </li>
-                        <li >
-                            <NavLink to="/politique-de-confidentialite">
+                        <li>
+                            <NavLink to="/politique-de-confidentialite" className="footerLink">
                                 Politique de confidentialité
                             </NavLink>
                         </li>
@@ -30,7 +30,7 @@ export default function Footer() {
                                 Design & Charte graphique par Mathias Delligne
                             </li>
                             <li>
-                                Développé par <a href="https://www.linkedin.com/in/louis-sachy/" target="_blank" rel="noreferrer">Louis Sachy</a>
+                                Développé par <a href="https://www.linkedin.com/in/louis-sachy/" target="_blank" rel="noreferrer" className="footerLink">Louis Sachy</a>
                             </li>
                         </ul>
                     </div>

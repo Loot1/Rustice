@@ -13,13 +13,18 @@ export default function HomePage() {
     const handleSubmit = () => {
         console.log(name)
     };
+
+    // input à redimensionner
+
     return (
         <>
             <section className="bg-[#270D3D] bg-[url('/public/background.jpg')] bg-cover grid grid-cols-1 lg:grid-cols-2" style={{height:"100vh", marginTop:"-97px"}}> {/* marginTop:"-97px" */}
-                <div className="flex flex-col mt-80 items-center z-50">
+                <div className="flex flex-col items-center mt-36 md:mt-64 z-50">
                     <CircledInput value={name} handleValue={handleChange} placeholder="Rechercher" iconName="search-outline" submit={handleSubmit}/>
-                    <IconLink strongText="Ajouter à" text="un serveur Discord" icon="add-outline" iconSize="29px"/>
-                    <IconLink strongText="Rejoindre" text="notre serveur Discord" icon="ellipse-outline" iconSize="23px"/>
+                    <div className="ml-2 mt-4">
+                        <IconLink strongText="Ajouter à" text="un serveur Discord" icon="add-outline" iconSize="29px"/>
+                        <IconLink strongText="Rejoindre" text="notre serveur Discord" icon="ellipse-outline" iconSize="23px"/>
+                    </div>
                 </div>
                 <img src={hexagon} className="absolute lg:top-32 xl:top-0 object-scale-down hidden lg:flex z-10" alt=""/>
                 <img src={hexagonmobile} id="hexagon-mobile" className="absolute bottom-0 object-cover lg:hidden w-100	sm:w-4/6 md:w-2/4" alt=""/>

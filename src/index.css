@@ -14,6 +14,16 @@ p {
   font-size: 18px;
 }
 
+a:hover {
+  .hoverUnderlined {
+    text-decoration: underline;
+  }
+}
+
+.footerLink:hover {
+  text-decoration: underline;
+} 
+
 li, h1, h2, h3, h4, h5, h6, input {
   color: white;
   font-family: "CenturyGothic";
@@ -57,11 +67,5 @@ li, h1, h2, h3, h4, h5, h6, input {
 @media (min-width: 1024px) {
   #hexagon-mobile {
     max-height: unset;
-  }
-}
-
-.lineWhenHover:hover {
-  #test {
-    text-decoration: underline;
   }
 }

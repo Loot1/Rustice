@@ -1,7 +1,7 @@
 export default function CircledInput({value, handleValue, placeholder, iconName, submit}) {
     return (
         <div
-            className="flex items-center mb-6"
+            className="flex items-center"
             style={{borderWidth:"3px", borderRadius:"18px", borderColor:"white", borderStyle:"solid", height:"68px"}}
         >
             <input
