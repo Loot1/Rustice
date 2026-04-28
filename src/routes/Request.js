@@ -1,7 +1,0 @@
-export default function RequestPage() {
-    return (
-        <div>
-            <h1>Requêtes</h1>
-        </div>
-    )
-}

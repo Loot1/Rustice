@@ -1,0 +1,6 @@
+export { HomePage } from './HomePage'
+export { NoMatchPage } from './NoMatchPage'
+export { RequestPage } from './RequestPage'
+export { PrivacyPolicyPage } from './PrivacyPolicyPage'
+export { LegalNoticePage } from './LegalNoticePage'
+export { AboutPage } from './AboutPage'

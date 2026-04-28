@@ -1,8 +1,9 @@
-export default function AboutPage() {
+export function AboutPage() {
     return (
-        <section className="p-4 bg-[#2B1E49]">
-            <div className="mx-auto font-sans">
-                <h1 className="text-2xl font-bold">Tailwind CSS sticky header</h1>
+        <section className="content-page bg-base-200">
+            <div className="content-card card border border-base-content/10 bg-base-100/10 shadow-none">
+                <div className="card-body gap-6">
+                    <h1 className="content-title">À propos</h1>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam quasi minus maxime reiciendis! Officiis,
                     doloremque consectetur nihil ipsum illo, reiciendis, suscipit cumque quae laboriosam nulla ratione ut dolores
                     quibusdam voluptatum.
@@ -80,6 +81,7 @@ export default function AboutPage() {
                     tenetur. Illo consequuntur tempora veniam soluta, cumque ullam dolores quo quisquam magni voluptatum nulla
                     omnis?
                 </p>
+                </div>
             </div>
         </section>
     )

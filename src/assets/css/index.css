@@ -1,0 +1,147 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+@plugin "daisyui/theme" {
+  name: "voicey";
+  default: true;
+  prefersdark: true;
+  color-scheme: "light";
+  --color-base-100: #270D3D;
+  --color-base-200: #2A1D48;
+  --color-base-300: #9292C6;
+  --color-base-content: #f3f9fd;
+  --color-primary: oklch(100% 0 0);
+  --color-primary-content: #270D3D;
+  --color-secondary: #9292C6;
+  --color-secondary-content: #2A1D48;
+  --color-accent: #F53D3D;
+  --color-accent-content: oklch(28% 0.066 53.813);
+  --color-neutral: #F53D3D;
+  --color-neutral-content: oklch(97% 0.014 254.604);
+  --color-info: #F53D3D;
+  --color-info-content: oklch(29% 0.066 243.157);
+  --color-success: oklch(72% 0.219 149.579);
+  --color-success-content: oklch(27% 0.072 132.109);
+  --color-warning: oklch(85% 0.199 91.936);
+  --color-warning-content: oklch(28% 0.066 53.813);
+  --color-error: oklch(80% 0.114 19.571);
+  --color-error-content: oklch(25% 0.092 26.042);
+  --radius-selector: 1rem;
+  --radius-field: 1rem;
+  --radius-box: 1rem;
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+  --border: 1.5px;
+  --depth: 0;
+  --noise: 0;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-base-100);
+  color: var(--color-base-content);
+}
+
+#root {
+  min-height: 100vh;
+}
+
+p, span, a {
+  color: var(--color-base-content);
+}
+
+p {
+  font-size: 18px;
+}
+
+.lineWhenHover:hover .hoverUnderlined,
+.footerLink:hover {
+  text-decoration: underline;
+}
+
+li, h1, h2, h3, h4, h5, h6, input {
+  color: var(--color-base-content);
+  font-family: "CenturyGothic";
+}
+
+.font-display {
+  font-family: ShowcardGothic;
+}
+
+@font-face {
+  font-family: 'CenturyGothic';
+  src: local('CenturyGothic'), url(../fonts/CenturyGothic/Regular.ttf) format('truetype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'CenturyGothic-Bold';
+  src: local('CenturyGothic'), url(../fonts/CenturyGothic/Bold.ttf) format('truetype');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'ShowcardGothic';
+  src: local('ShowcardGothic'), url(../fonts/ShowcardGothic.ttf) format('truetype');
+}
+
+/* HEADER */
+
+.headerTitle {
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-top-width: 1.5px;
+  border-bottom-width: 1.5px;
+  font-size: 35px;
+  font-family: ShowcardGothic;
+  font-weight: normal;
+}
+
+.home-hero-section {
+  height: 100vh;
+  margin-top: -97px;
+}
+
+.hero-link-label {
+  margin-left: 7px;
+  font-family: CenturyGothic;
+  font-size: 19px;
+}
+
+.section-title {
+  font-family: CenturyGothic;
+  font-size: 3.6rem;
+  letter-spacing: 5px;
+}
+
+.content-page {
+  min-height: calc(100vh - 220px);
+  padding: 3rem 1.5rem;
+}
+
+.content-card {
+  margin: 0 auto;
+  max-width: 72rem;
+}
+
+.content-title {
+  font-family: CenturyGothic;
+  font-size: 2.25rem;
+  font-weight: 700;
+}
+
+.voicey-muted {
+  color: color-mix(in srgb, var(--color-base-content) 78%, var(--color-base-100));
+}
+
+/* END HEADER */
+
+#hexagon-mobile {
+  max-height: 450px;
+}
+
+@media (min-width: 1024px) {
+  #hexagon-mobile {
+    max-height: unset;
+  }
+}

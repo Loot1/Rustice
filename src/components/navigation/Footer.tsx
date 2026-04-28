@@ -1,8 +1,8 @@
-import { NavLink } from 'react-router-dom'
+import { NavLink } from "react-router";
 
-export default function Footer() {
+export function Footer() {
     return (
-        <footer className="bg-[#270D3D] text-white px-8 md:px-12 lg:px-20 xl:px-36">
+        <footer className="bg-base-100 text-base-content px-8 md:px-12 lg:px-20 xl:px-36">
             <div className="lg:w-3/4">
                 <div className="pt-10 pb-4 border-b-2">
                     <h2 className="text-4xl tracking-wide font-bold">Justice</h2>
@@ -11,12 +11,12 @@ export default function Footer() {
                     <ul>
                         <li>
                             {/* "text-gray-400 hover:text-teal-400 duration-300 text-sm cursor-pointer leading-6" */}
-                            <NavLink to="/mentions-legales" className="footerLink">
+                            <NavLink to="/legal-notice" className="footerLink link link-hover no-underline hover:no-underline">
                                 Mentions légales
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink to="/politique-de-confidentialite" className="footerLink">
+                            <NavLink to="/privacy-policy" className="footerLink link link-hover no-underline hover:no-underline">
                                 Politique de confidentialité
                             </NavLink>
                         </li>
@@ -30,13 +30,13 @@ export default function Footer() {
                                 Design & Charte graphique par Mathias Delligne
                             </li>
                             <li>
-                                Développé par <a href="https://www.linkedin.com/in/louis-sachy/" target="_blank" rel="noreferrer" className="footerLink">Louis Sachy</a>
+                                Développé par <a href="https://www.linkedin.com/in/louis-sachy/" target="_blank" rel="noreferrer" className="footerLink link link-hover no-underline hover:no-underline">Louis Sachy</a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
-            <div className="text-center text-gray-400 text-sm py-4 md:py-6">
+            <div className="voicey-muted text-sm text-center py-4 md:py-6">
                 <span>© {new Date().getFullYear()} Justice. All rights reserved.</span>
             </div>
         </footer>
