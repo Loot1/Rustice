@@ -10,13 +10,12 @@ export function Footer() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 py-6 md:py-8">
                     <ul>
                         <li>
-                            {/* "text-gray-400 hover:text-teal-400 duration-300 text-sm cursor-pointer leading-6" */}
-                            <NavLink to="/legal-notice" className="footerLink link link-hover no-underline hover:no-underline">
+                            <NavLink to="/legal-notice" className="hover:underline">
                                 Mentions légales
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink to="/privacy-policy" className="footerLink link link-hover no-underline hover:no-underline">
+                            <NavLink to="/privacy-policy" className="hover:underline">
                                 Politique de confidentialité
                             </NavLink>
                         </li>
@@ -30,7 +29,7 @@ export function Footer() {
                                 Design & Charte graphique par Mathias Delligne
                             </li>
                             <li>
-                                Développé par <a href="https://www.linkedin.com/in/louis-sachy/" target="_blank" rel="noreferrer" className="footerLink link link-hover no-underline hover:no-underline">Louis Sachy</a>
+                                Développé par <a href="https://www.linkedin.com/in/louis-sachy/" target="_blank" rel="noreferrer" className="hover:underline">Louis Sachy</a>
                             </li>
                         </ul>
                     </div>

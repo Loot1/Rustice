@@ -1,9 +1,9 @@
 export function AboutPage() {
     return (
-        <section className="content-page bg-base-200">
-            <div className="content-card card border border-base-content/10 bg-base-100/10 shadow-none">
+        <section className="min-h-[calc(100vh-220px)] py-12 px-6 bg-base-200">
+            <div className="mx-auto max-w-6xl card border border-base-content/10 bg-base-100/10 shadow-none">
                 <div className="card-body gap-6">
-                    <h1 className="content-title">À propos</h1>
+                    <h1 className="font-century text-4xl font-bold">À propos</h1>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam quasi minus maxime reiciendis! Officiis,
                     doloremque consectetur nihil ipsum illo, reiciendis, suscipit cumque quae laboriosam nulla ratione ut dolores
                     quibusdam voluptatum.
