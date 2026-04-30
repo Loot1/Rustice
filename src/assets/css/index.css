@@ -1,5 +1,5 @@
 @import "tailwindcss";
-@plugin "daisyui";
+@plugin "daisyui/index.js";
 
 @plugin "daisyui/theme" {
   name: "voicey";
@@ -136,12 +136,3 @@ li, h1, h2, h3, h4, h5, h6, input {
 
 /* END HEADER */
 
-#hexagon-mobile {
-  max-height: 450px;
-}
-
-@media (min-width: 1024px) {
-  #hexagon-mobile {
-    max-height: unset;
-  }
-}
