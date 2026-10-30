@@ -1,5 +1,6 @@
 export { Header } from './navigation/Header'
 export { Footer } from './navigation/Footer'
 export { Layout } from './layouts/Layout'
+export { DashboardLayout } from './layouts/DashboardLayout'
 export { CircledButton } from './CircledButton'
 export { CircledInput } from './CircledInput'

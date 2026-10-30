@@ -79,6 +79,7 @@ li, h1, h2, h3, h4, h5, h6, input {
 @font-face {
   font-family: 'ShowcardGothic';
   src: local('ShowcardGothic'), url(../fonts/ShowcardGothic.ttf) format('truetype');
+  font-weight: bold
 }
 
 .voicey-muted {
